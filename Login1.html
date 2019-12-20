@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset = "utf-8">
+<title>
+login page
+</title>
+<link rel = "stylesheet" type = "text/css" href = "Login_style.css">
+<script  type="text/javascript">
+function validation(){
+var name=document.getElementById('name').value;
+var password=document.getElementById('pass').value;
+if(name==''||password=='')
+{
+document.getElementById("result").innerHTML="All field required";
+return false;
+}
+else if(name.length<7){
+document.getElementById("result").innerHTML="Name at least 7 characters";
+return false;}
+else if(password.length<9){
+document.getElementById("result").innerHTML="password at least 9 characters";
+return false;
+}
+else{
+return true;
+}
+}
+
+</script>
+</head>
+<body>                                     <!-- The Navbar -->    
+
+<div>
+<header class="he1">
+<img src="logo.png" id="lo">
+<form>
+<input type="button" value="Apply now" id="b2">
+</form>
+</header>
+  <!-- End The Navbar -->
+  <!-- Section -->
+</div>
+<div class="d1">
+<p id="p">login</p>
+<hr>
+
+<form >
+<select name="" class="s1">
+ <option>student portal</option>
+ <option>Staff portal</option>
+<option>Fees</option>
+ </select>
+<fieldset class="f1">
+<p>login</p>
+<hr>
+<form  action="#" method="post" onsubmit=" return validation()">
+<label >
+Username:
+<input type="name" placeholder ="username"  class="i1" id="name" name="name">
+</label>
+<label>
+password:
+<input type="password" placeholder="password" class="i2" id="pass" name="password">
+</label>
+<input type="submit"  value="login" name="submit"id="b1">
+</form>
+<div id="result" ></div>
+</fieldset>
+					 <!-- footer-->
+
+<div class="d3"><p><a href="elnjiv.html" style="text-decoration-line: none;">WebSite  University in Egypt </a> &nbsp &nbsp Microsoft 2013&copy</p></div>
+</div>
+<div class="d4">
+<p>Tel : 16383 Ext: 2828 ,Mobile: 01000091720, 010 23260070.</p>
+<p>E-mail : itsupport@#a60f15.edu.eg </p>
+</div>
+</body>
+</html>
