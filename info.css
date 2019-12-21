@@ -1,0 +1,42 @@
+html{
+	background-color:white;
+	opacity:0.8;
+}
+table,th,td{
+	
+	border: groove black;
+	width:37%;
+	height:50px;
+	border-collapse:collapse;
+}
+th{
+	
+	background-color:#a60f15;
+}
+table{
+	float:center;
+	margin-left:35%;
+	background-attachment:fixed;
+	position:sticky;
+	margin-top:8%;
+}
+h2{
+	text-align:center;
+	color:#a60f15;
+	margin-top:40px;
+}
+.he1{
+		background-color:black;
+		background-size:cover;
+		opacity:0.8;
+		background-attachment:fixed;
+		margin:0;
+		padding:0;
+		position:sticky;
+		overflow: hidden;
+		border-style:solid;
+		border-color:#a60f15;
+		width:100%;
+		height:40px;
+
+	}
